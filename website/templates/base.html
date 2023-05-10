@@ -28,12 +28,13 @@
       <div class="container">
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
-          <!-- display the "Login and Sign-up" if user is authenticated -->
+          <!-- display the "Home and Log-out" if user is authenticated -->
           {% if user.is_authenticated %}
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           <a class="nav-item nav-link" id="home" href="/">Home</a>
           <div class="navbar">
           </div>
+          <!-- display the "Login and Sign-up" if user is not authenticated -->
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
           <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
